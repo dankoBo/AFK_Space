@@ -22,7 +22,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    }
+}
 
 .moon-path {
     position: relative;
@@ -64,6 +64,12 @@ h1 {
 	        background-clip: text;
 	color: transparent;
 	animation: shimmer 2s linear infinite;
+
+    filter:
+        drop-shadow(1px 0 0 black)
+        drop-shadow(-1px 0 0 black)
+        drop-shadow(0 1px 0 black)
+        drop-shadow(0 -1px 0 black);
 }
 
 h2 {
@@ -74,6 +80,13 @@ h2 {
     letter-spacing: 4px;
     line-height: 80px;
     animation: breathe 4s ease-in-out infinite;
+
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000,
+         0px  0px 10px rgba(0,0,0,0.8);
 }
 
 @keyframes floating {
